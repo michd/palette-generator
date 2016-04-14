@@ -89,7 +89,6 @@
         output = "";
     
     for (i = 0; i < parsedColors.length; i++) {
-      console.log(generateCodeForColor(parsedColors[i], codeType));
       output += generateCodeForColor(parsedColors[i], codeType) + "\n";
     }
     
