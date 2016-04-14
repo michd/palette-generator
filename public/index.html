@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Palette Generator</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <head>
+  <body>
+    <header><h1>Handy Dandy Palette generator</h1></header>
+
+    <form>
+      <fieldset>
+        <p>Add you palette colors like this, one on each line:</p>
+        <code>#ABC123 color_name Short comment</code>
+        <label>
+          <span>Palette</span>
+          <textarea id="colors-textarea"></textarea>
+        </label>
+        <button type="button" id="generate-button">Generate palette</button>
+      </fieldset>
+    </form>
+
+    <section id="palette-section" class="hidden"></section>
+
+    <section id="code-output">
+      <form>
+        <fieldset>
+          <label>
+            <span>Code environment target</span>
+            <select id="code-output-type-select">
+              <option value="android">Android</option>
+              <option value="xamarin-ios">Xamarin.iOS</option>
+              <option value="scss">SCSS</option>
+            </select>
+          </label>
+          <label>
+            <span>Code to copy-paste</span>
+            <textarea id="output-code-textarea"></textarea>
+        </fieldset>    
+      </form>
+    </section>
+
+    <footer>
+        Written by
+        <a href="http://michd.me" target="_blank">Micha&euml;l "Mich" Duerinckx</a>,
+        because tedious repetitive tasks are meant to be automated.
+    </footer>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
